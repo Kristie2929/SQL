@@ -1,0 +1,20 @@
+CREATE TABLE Shoe_store (id INTEGER PRIMARY KEY, shoe_name TEXT, shoe_size INTEGER, price INTEGER, 
+ordered INTEGER, color TEXT, sold INTEGER);
+INSERT INTO Shoe_store VALUES (1, "running_shoe", 5, 49, 10," red", 4);
+INSERT INTO Shoe_store VALUES (2, "running_shoe", 6, 49, 5, " red", 2);
+INSERT INTO Shoe_store VALUES (3, "running_shoe", 7, 49, 10," red", 4);
+INSERT INTO Shoe_store VALUES (4, "running_shoe", 8, 49, 10," red", 2);
+INSERT INTO Shoe_store VALUES (5, "running_shoe", 9, 49, 8," red", 2);
+INSERT INTO Shoe_store VALUES (6, "running_shoe", 6, 59, 10," blue", 4);
+INSERT INTO Shoe_store VALUES (7, "running_shoe", 7, 59, 10," blue", 4);
+INSERT INTO Shoe_store VALUES (8, "running_shoe", 8, 59, 10," blue", 6);
+INSERT INTO Shoe_store VALUES (9, "running_shoe", 9, 59, 10," blue", 3);
+INSERT INTO Shoe_store VALUES (10, "running_shoe", 5, 39, 6," green", 4);
+INSERT INTO Shoe_store VALUES (11, "running_shoe", 6, 39, 8," green", 4);
+INSERT INTO Shoe_store VALUES (12, "running_shoe", 7, 39, 10," green", 4);
+INSERT INTO Shoe_store VALUES (13, "running_shoe", 8, 39, 10," green", 4);
+INSERT INTO Shoe_store VALUES (14, "running_shoe", 9, 39, 12," green", 3);
+INSERT INTO Shoe_store VALUES (15, "running_shoe", 10, 39, 7," green", 2);
+SELECT * FROM Shoe_store WHERE price >40;
+SELECT * FROM Shoe_store WHERE sold >5;
+SELECT SUM(sold)FROM Shoe_store;
